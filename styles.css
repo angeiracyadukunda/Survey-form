@@ -1,0 +1,123 @@
+ :root{
+--first--color:white;
+--second--color:rgba(27, 27, 50, 0.8);
+--third--color:#37af65;
+--border--color:#ced4da;
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+color: var(--first--color);
+font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+font-weight: 400;
+line-height: 0.5rem;
+}
+
+
+#form-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 4rem 0 3rem 0;
+    }
+
+.form-container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+z-index: 2;
+}
+
+.body-container{
+    background-image:linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ),url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    z-index: -1;
+
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 30px; 
+    background-color: var(--second--color);
+
+}
+select{
+    width: 100%;
+        height: 2.375rem;
+    
+    font-size: 100%;
+    color: black;
+
+}
+option{
+    color: black;  
+}
+ #description{
+    font-style:italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+textarea{
+            color: var(--second--color);
+            min-height: 120px;
+            width: 100%;
+            padding: 0.625rem;
+            
+        
+    }
+ button{
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            background: #37af65;
+            color: inherit;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+       input#name,#email,#number {
+        display: block;
+        width: 100%;
+        height: 2.375rem;
+        padding: 0.375rem 0.75rem;
+        color: #495057;
+        background-color: var(--first--color);
+        background-clip: padding-box;
+        border: 1px solid var(--border--color);
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+    
+.inradio{
+    display:flex;
+    flex-direction: column;
+}
+.box-container,.checkbox-container{
+    width: unset;
+    /* display: block; */
+}
+.checkbox-container{
+    display: flex;
+    flex-direction: column;
+    
+}
